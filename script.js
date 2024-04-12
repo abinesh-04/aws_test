@@ -1,7 +1,7 @@
 // Initialize AWS SDK with your credentials and region
 AWS.config.update({
-    accessKeyId: 'AKIA5FTZDTTANRJJRT75', // Replace with your AWS access key ID
-    secretAccessKey: 'xrBMAbcWF5qBKncbn0LB4Rj1X0EPbAfyfGY4JiqI', // Replace with your AWS secret access key
+    accessKeyId: '', // Replace with your AWS access key ID
+    secretAccessKey: '', // Replace with your AWS secret access key
     region: 'ap-south-1' // Replace with your AWS region
 });
 
