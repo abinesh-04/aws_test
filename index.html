@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button id="search-btn">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.987.0.min.js"></script>
+    <script src="../static/script.js"></script>
+    <script>
+        // Attach event listener to the Search button using JavaScript
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchBtn = document.getElementById('search-btn');
+            if (searchBtn) {
+                searchBtn.addEventListener('click', getWeather);
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
